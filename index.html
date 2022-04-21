@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container" id='cont'>
+        <div class="card" onclick="page(1);"><h3>Січ</h3></div>
+        <div class="card" onclick="page(2);"><h3>Лют</h3></div>
+        <div class="card" onclick="page(3);"><h3>Бер</h3></div>
+        <div class="card" onclick="page(4);"><h3>Кві</h3></div>
+        <div class="card" onclick="page(5);"><h3>Тра</h3></div>
+        <div class="card" onclick="page(6);"><h3>Чер</h3></div>
+        <div class="card" onclick="page(7);"><h3>Лип</h3></div>
+        <div class="card" onclick="page(8);"><h3>Сер</h3></div>
+        <div class="card" onclick="page(9);"><h3>Вер</h3></div>
+        <div class="card" onclick="page(10);"><h3>Жов</h3></div>
+        <div class="card" onclick="page(11);"><h3>Лис</h3></div>
+        <div class="card" onclick="page(12);"><h3>Гру</h3></div>
+    </div>
+    <div class="container-week-pc week none" id='cont-dayFPC'>
+        1
+        <div class="daycard" onclick="getPage(1, 1);"><p>Пн</p></div> 
+        <div class="daycard" onclick="getPage(1, 2);"><p>Вт</p></div>
+        <div class="daycard" onclick="getPage(1, 3);"><p>Ср</p></div>
+        <div class="daycard" onclick="getPage(1, 4);"><p>Чт</p></div>
+        <div class="daycard" onclick="getPage(1, 5);"><p>Пт</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(1, 6);"><p>Сб</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(1, 7);"><p>Нд</p></div>
+        <div class="daycard daycard-info" onclick="getPage(1, 8);"><p>Инфо</div>
+        2
+        <div class="daycard" onclick="getPage(2, 1);"><p>Пн</p></div>
+        <div class="daycard" onclick="getPage(2, 2);"><p>Вт</p></div>
+        <div class="daycard" onclick="getPage(2, 3);"><p>Ср</p></div>
+        <div class="daycard" onclick="getPage(2, 4);"><p>Чт</p></div>
+        <div class="daycard" onclick="getPage(2, 5);"><p>Пт</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(2, 6);"><p>Сб</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(2, 7);"><p>Нд</p></div>
+        <div class="daycard daycard-info" onclick="getPage(2, 8);"><p>Инфо</p></div>
+        3
+        <div class="daycard" onclick="getPage(3, 1);"><p>Пн</p></div>
+        <div class="daycard" onclick="getPage(3, 2);"><p>Вт</p></div>
+        <div class="daycard" onclick="getPage(3, 3);"><p>Ср</p></div>
+        <div class="daycard" onclick="getPage(3, 4);"><p>Чт</p></div>
+        <div class="daycard" onclick="getPage(3, 5);"><p>Пт</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(3, 6);"><p>Сб</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(3, 7);"><p>Нд</p></div>
+        <div class="daycard daycard-info" onclick="getPage(3, 8);"><p>Инфо</p></div>
+        4
+        <div class="daycard" onclick="getPage(4, 1);"><p>Пн</p></div>
+        <div class="daycard" onclick="getPage(4, 2);"><p>Вт</p></div>
+        <div class="daycard" onclick="getPage(4, 3);"><p>Ср</p></div>
+        <div class="daycard" onclick="getPage(4, 4);"><p>Чт</p></div>
+        <div class="daycard" onclick="getPage(4, 5);"><p>Пт</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(4, 6);"><p>Сб</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(4, 7);"><p>Нд</p></div>
+        <div class="daycard daycard-info" onclick="getPage(4, 8);"><p>Инфо</p></div>
+    </div>
+    <div class="container-week-android week none" id='cont-dayFAND'>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <div class="daycard" onclick="getPage(1, 1);"><p>Пн</p></div>
+        <div class="daycard" onclick="getPage(2, 1);"><p>Пн</p></div>
+        <div class="daycard" onclick="getPage(3, 1);"><p>Пн</p></div>
+        <div class="daycard" onclick="getPage(4, 1);"><p>Пн</p></div>
+
+        <div class="daycard" onclick="getPage(1, 2);"><p>Вт</p></div>
+        <div class="daycard" onclick="getPage(2, 2);"><p>Вт</p></div>
+        <div class="daycard" onclick="getPage(3, 2);"><p>Вт</p></div>
+        <div class="daycard" onclick="getPage(4, 2);"><p>Вт</p></div>
+
+        <div class="daycard" onclick="getPage(1, 3);"><p>Ср</p></div>
+        <div class="daycard" onclick="getPage(2, 3);"><p>Ср</p></div>
+        <div class="daycard" onclick="getPage(3, 3);"><p>Ср</p></div>
+        <div class="daycard" onclick="getPage(4, 3);"><p>Ср</p></div>
+
+        <div class="daycard" onclick="getPage(1, 4);"><p>Чт</p></div>
+        <div class="daycard" onclick="getPage(2, 4);"><p>Чт</p></div>
+        <div class="daycard" onclick="getPage(3, 4);"><p>Чт</p></div>
+        <div class="daycard" onclick="getPage(4, 4);"><p>Чт</p></div>
+
+        <div class="daycard" onclick="getPage(1, 5);"><p>Пт</p></div>
+        <div class="daycard" onclick="getPage(2, 5);"><p>Пт</p></div>
+        <div class="daycard" onclick="getPage(3, 5);"><p>Пт</p></div>
+        <div class="daycard" onclick="getPage(4, 5);"><p>Пт</p></div>
+
+        <div class="daycard daycard-holy" onclick="getPage(1, 6);"><p>Сб</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(2, 6);"><p>Сб</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(3, 6);"><p>Сб</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(4, 6);"><p>Сб</p></div>
+
+        <div class="daycard daycard-holy" onclick="getPage(1, 7);"><p>Нд</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(2, 7);"><p>Нд</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(3, 7);"><p>Нд</p></div>
+        <div class="daycard daycard-holy" onclick="getPage(4, 7);"><p>Нд</p></div>
+
+        <div class="daycard daycard-info" onclick="getPage(1, 8);"><p>Инфо</p></div>
+        <div class="daycard daycard-info" onclick="getPage(2, 8);"><p>Инфо</p></div>
+        <div class="daycard daycard-info" onclick="getPage(3, 8);"><p>Инфо</p></div>
+        <div class="daycard daycard-info" onclick="getPage(4, 8);"><p>Инфо</p></div>
+    </div>
+    <img id="res" src="" class="none">
+    <button id="back" class="btn none" onclick="back();">Назад</button>
+    <input type="text" class="none" id="mouth">
+    <script src="./index.js"></script>
+</body>
+</html>
