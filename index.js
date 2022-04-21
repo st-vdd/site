@@ -23,8 +23,8 @@ function getPage(week, day) {
     res2.classList.remove('none');
     res.src = `./res/${m}/${week}/${day}.jpg`;
     try {
-    res1.src = `./res/${m}/${week}/${day}.1.jpg`;
-    res2.src = `./res/${m}/${week}/${day}.2.jpg`;
+        res1.src = `./res/${m}/${week}/${day}.1.jpg`;
+        res2.src = `./res/${m}/${week}/${day}.2.jpg`;
     }
 }
 
