@@ -21,8 +21,8 @@ function getPage(week, day) {
     res.classList.remove('none');
     res1.classList.remove('none');
     res2.classList.remove('none');
-    if (typeof `./res/${m}/${week}/${day}.jpg` !== 'undefined') {
-        res.src = `./res/${m}/${week}/${day}.jpg`;
+    res.src = `./res/${m}/${week}/${day}.jpg`;
+    if (typeof res.src !== 'undefined') {
         res1.src = `./res/${m}/${week}/${day}.1.jpg`;
         res2.src = `./res/${m}/${week}/${day}.2.jpg`;
     } else {
