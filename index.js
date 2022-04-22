@@ -21,9 +21,15 @@ function getPage(week, day) {
     res.classList.remove('none');
     res1.classList.remove('none');
     res2.classList.remove('none');
-    res.src = `./res/${m}/${week}/${day}.*`;
-    res1.src = `./res/${m}/${week}/${day}.1.*`;
-    res2.src = `./res/${m}/${week}/${day}.2.*`;
+    if (typeof `./res/${m}/${week}/${day}.jpg` !== 'undefined') {
+        res.src = `./res/${m}/${week}/${day}.jpg`;
+        res1.src = `./res/${m}/${week}/${day}.1.jpg`;
+        res2.src = `./res/${m}/${week}/${day}.2.jpg`;
+    } else {
+        res.src = `./res/${m}/${week}/${day}.pdf`;
+        res1.src = `./res/${m}/${week}/${day}.1.pdf`;
+        res2.src = `./res/${m}/${week}/${day}.2.pdf`;
+    }
 }
 
 function back() {
